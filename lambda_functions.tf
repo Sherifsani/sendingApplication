@@ -20,5 +20,7 @@ resource "aws_lambda_function" "api_handler_function" {
   role = aws_iam_role.api_handler_function.arn
   function_name = "api_handler_function"
   runtime = "python3.13"
+  filename = "lambda/api_handler.zip"
+  source_code_hash = filebase64sha256("lambda/api_handler.zip")
   
 }
