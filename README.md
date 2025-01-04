@@ -42,8 +42,8 @@ The system follows this flow:
 4. **SES**: Sends email notifications.
 5. **SNS**: Sends SMS notifications.
 
-![Architecture Diagram](#)  
-*Add an architecture diagram here, if possible.*
+![Architecture Diagram](infrastructure.png)  
+
 
 ---
 
