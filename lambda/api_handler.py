@@ -6,5 +6,5 @@ def lambda_handler(event, context):
     
     sfn.start_execution(
         input = event["input"],
-        stateMachineArn = "arn:aws:iam::422057007813:role/step_functions_role" #replace with your state machine ARN
+        stateMachineArn = "arn:aws:states:us-east-1:422057007813:stateMachine:notificationStateMachine" #replace with your state machine ARN
     )
