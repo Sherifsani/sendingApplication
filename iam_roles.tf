@@ -149,3 +149,8 @@ resource "aws_iam_role_policy_attachment" "step_functions_policy_attachment" {
   role       = aws_iam_role.step_functions_role.name
   policy_arn = aws_iam_policy.step_functions_policy.arn
 }
+
+resource "aws_iam_role_policy_attachment" "api_handler_policy" {
+  role       = aws_iam_role.api_handler_function.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
